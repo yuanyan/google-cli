@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var google = require('../');
+var program = require('commander');
+
+program.version(require('../package').version)
+  .usage('<query>')
+  .parse(process.argv)
+
+google.search(program)

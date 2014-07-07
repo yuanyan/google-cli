@@ -57,7 +57,10 @@ function search(q){
             url = 'http://' + ip;
         }
         open(url);
-        process.exit(0);
+        setTimeout(function () {
+            process.exit(0);
+        }, 100);
+        
     })
 }
 

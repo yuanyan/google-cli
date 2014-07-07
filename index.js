@@ -56,8 +56,9 @@ function search(q){
         }else{
             url = 'http://' + ip;
         }
-        open(url);
-        process.exit(0);
+        open(url, function () {
+            process.exit(0);
+        });
     })
 }
 
